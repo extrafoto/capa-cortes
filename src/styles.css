@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap');
+.modal .modal-content {
+  width: min(100%, 840px);
+  min-width: 0;
+  max-width: 100%;
+  max-height: calc(100dvh - 48px);
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.modal .modal-content canvas {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: max(40px, calc(100dvh - 180px));
+  flex: none;
+  align-self: center;
+  object-fit: contain;
+}
+.modal .modal-content button {
+  float: none;
+  margin-top: 0;
+  align-self: flex-end;
+  flex: none;
+}
+:root{color:#18212b;background:#f4f6f8;font-family:'DM Sans',sans-serif}*{box-sizing:border-box}body{margin:0}.app{min-height:100vh}.top{height:76px;background:#fff;border-bottom:1px solid #e5e9ed;display:flex;align-items:center;gap:24px;padding:0 clamp(18px,4vw,64px);position:sticky;top:0;z-index:5}.brand{font-family:'Playfair Display';font-size:25px;color:#07588d;white-space:nowrap}.brand span{font:600 11px 'DM Sans';letter-spacing:.1em;color:#6b7580;margin-left:8px}.load{background:#0671b7;color:white;border:0;border-radius:7px;padding:11px 15px;font-weight:700;cursor:pointer}.file{color:#475463;font-size:13px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.workspace{display:grid;grid-template-columns:minmax(0,1fr) 335px;gap:28px;padding:28px clamp(18px,4vw,64px)}.stage-card,.panel{background:#fff;border:1px solid #e3e8ed;border-radius:12px;box-shadow:0 4px 18px #18212b08}.stage-card{padding:20px}.empty{height:min(63vh,580px);display:grid;place-items:center;border:2px dashed #d3dce4;border-radius:8px;text-align:center;color:#64727e;background:linear-gradient(135deg,#f7fafc,#f0f5f8)}.empty strong{display:block;color:#263440;font-size:18px;margin-bottom:7px}.canvas-wrap{position:relative;width:100%;height:min(63vh,580px);background:#1d252c;border-radius:7px;overflow:hidden;touch-action:none;cursor:grab}.canvas-wrap.dragging{cursor:grabbing}.photo{width:100%;height:100%;object-fit:contain;display:block}.frame{position:absolute;border:2px solid #d9e5ee;background:#0b6ca510;color:white;cursor:pointer;box-shadow:0 0 0 9999px #00000012}.frame.active{border-color:#f9c642;background:#f9c64219;box-shadow:0 0 0 2px #fff8 inset,0 0 20px #f9c64277}.frame label{position:absolute;top:-29px;left:-2px;background:#122c3b;color:#fff;padding:5px 8px;border-radius:4px;font-size:11px;font-weight:700;white-space:nowrap}.frame.active label{background:#e0a600}.toolbar{display:flex;align-items:center;gap:12px;padding:17px 2px 0}.toolbar button,.preset{font:inherit;border:1px solid #d4dce3;background:#fff;color:#263440;border-radius:6px;padding:8px 11px;cursor:pointer}.toolbar button:hover,.preset:hover{border-color:#0876ba}.zoom{font-size:13px;font-weight:700;color:#526271}.panel{padding:22px;height:max-content}.eyebrow{font-size:11px;text-transform:uppercase;letter-spacing:.11em;color:#6b7984;font-weight:700}.panel h1{font-size:21px;margin:7px 0 18px}.presets{display:grid;gap:7px;margin-bottom:22px}.preset{text-align:left;display:flex;justify-content:space-between;align-items:center}.preset.active{background:#e8f4fb;border-color:#0876ba;color:#07588d;font-weight:700}.tag{font-size:10px;background:#f4e9c5;color:#73560c;padding:3px 5px;border-radius:3px}.details{border-top:1px solid #e5e9ed;padding-top:16px;display:grid;gap:11px;font-size:13px}.line{display:flex;justify-content:space-between;gap:10px}.line span{color:#63717d}.quality{padding:10px;background:#edf6ee;color:#286338;border-radius:6px;font-size:12px;line-height:1.4}.quality.warn{background:#fff4df;color:#885a00}.actions{display:grid;gap:9px;margin-top:19px}.preview,.download{border:0;border-radius:7px;padding:12px;font:700 14px 'DM Sans';cursor:pointer}.preview{background:#e8f1f6;color:#114665}.download{background:#0671b7;color:#fff}.notice{font-size:11px;line-height:1.4;color:#6b7984;margin-top:15px}.modal{position:fixed;inset:0;background:#101c25bb;z-index:10;display:grid;place-items:center;padding:24px}.modal-content{background:#fff;border-radius:10px;padding:20px;max-width:min(92vw,840px)}.modal canvas{display:block;max-width:80vw;max-height:70vh;background:#111}.modal button{margin-top:12px;float:right;border:0;background:#0671b7;color:white;border-radius:6px;padding:9px 13px;font-weight:700}@media(max-width:850px){.workspace{grid-template-columns:1fr}.panel{order:-1}.top{gap:12px}.brand span{display:none}.canvas-wrap,.empty{height:48vh}}
